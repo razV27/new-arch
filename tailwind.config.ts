@@ -10,7 +10,7 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
     "./node_modules/@shadcn/ui/**/*.{js,ts,jsx,tsx}",
     "./node_modules/@nextui-org/react/**/*.{js,ts,jsx,tsx}",
-    "./node_modules/@nextui-org/theme/dist/components/(accordion|button|divider|ripple|spinner).js"
+    "./node_modules/@nextui-org/theme/dist/components/(accordion|button|navbar|divider|ripple|spinner).js"
   ],
   theme: {
   	extend: {

@@ -7,10 +7,10 @@ interface IBtnProps {
   className?: string;
 }
 
-export const ThemeBtn: React.FC<IBtnProps> = ({ className }) => {
+export const ThemeBtn:React.FC<IBtnProps> = ({className}) => {
   const { theme, toggleTheme } = useThemeStore();
   return (
-    <Button className={className} variant="secondary" onClick={toggleTheme}>
+    <Button className={className} onClick={toggleTheme}>
       Switch to {theme === "dark" ? "light" : "dark"}
     </Button>
   );
