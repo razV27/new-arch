@@ -1,13 +1,13 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
+import { Button } from "@/shared/@core/components/ui/button";
 import { useThemeStore } from "@/store/useThemeStore";
 
 interface IBtnProps {
   className?: string;
 }
 
-export const ThemeBtn:React.FC<IBtnProps> = ({className}) => {
+export const ThemeBtn: React.FC<IBtnProps> = ({ className }) => {
   const { theme, toggleTheme } = useThemeStore();
   return (
     <Button className={className} onClick={toggleTheme}>

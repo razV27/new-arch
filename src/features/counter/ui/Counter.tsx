@@ -1,11 +1,11 @@
 "use client";
 
-import { Form } from "@/components/ui/form";
+import { Form } from "@/shared/@core/components/ui/form";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { Input } from "@/components/ui/input";
+import { Input } from "@/shared/@core/components/ui/input";
 import { z } from "zod";
-import { Button } from "@/components/ui/button";
+import { Button } from "@/shared/@core/components/ui/button";
 import { useCounterStore } from "@/store/useStore";
 
 const formSchema = z.object({
@@ -33,10 +33,7 @@ export const CounterButton = () => {
         })}
       >
         <div className="flex gap-2">
-          <Input
-            {...form.register("value")}
-            className="w-[50%]"
-          />
+          <Input {...form.register("value")} className="w-[50%]" />
           <Button
             type="submit"
             className="w-[50%] bg-blue-500 text-white rounded"
