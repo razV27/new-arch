@@ -4,8 +4,7 @@ import { useThemeStore } from "@/store/useThemeStore";
 import { useEffect } from "react";
 
 export const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
-  const theme = useThemeStore((state) => state.theme);
-  const toggleTheme = useThemeStore((state) => state.toggleTheme);
+  const {theme, toggleTheme} = useThemeStore((state) => state);
 
   useEffect(() => {
     const storedTheme = (localStorage.getItem("theme") as "light" | "dark") || "light";
